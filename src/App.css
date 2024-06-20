@@ -1,0 +1,285 @@
+
+/* ----------- Fonts ------------ */
+
+@font-face {
+    font-family: 'jost';
+    src: url('./assets/fonts/jost-variablefont_wght-webfont.eot');
+    src: url('./assets/fonts/jost-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/jost-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./assets/fonts/jost-variablefont_wght-webfont.woff') format('woff'),
+         url('./assets/fonts/jost-variablefont_wght-webfont.svg#jostregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'jost';
+    src: url('./assets/fonts/jost-italic-variablefont_wght-webfont.eot');
+    src: url('./assets/fonts/jost-italic-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./assets/fonts/jost-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./assets/fonts/jost-italic-variablefont_wght-webfont.woff') format('woff'),
+         url('./assets/fonts/jost-italic-variablefont_wght-webfont.svg#jostitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+/* ----------- global css -------- */
+body{
+    max-width: 576px!important;
+    font-family: 'jost', Arial, Helvetica, sans-serif;
+}
+
+#root{
+    background-color: black;
+}
+
+main{
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+}
+
+main h2{
+    width: 70%;
+    margin: auto;
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+
+main p{
+    width: 80%;
+    margin: auto;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+main input, button{
+    margin: auto;
+    font-size: 1.5rem;
+}
+
+main input{
+    width: 73%;
+    padding: 1.3rem 0 1.3rem 2rem;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+
+main button{
+    width: 80%;
+    padding: 1.5rem 0;
+    background-color: #80F7FF;
+    font-weight: bold;
+    margin-top: 3rem;
+    color: black;
+    border: none;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: 2rem;
+}
+
+
+
+
+/* ----------- global class -------- */
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+/* ----------- Header ------------ */
+header{
+    padding-top: 2rem;
+}
+
+header .menuIcon, header .closeIcon{
+    color: white;
+    margin-left: 1rem;
+    font-size: 10rem;
+}
+
+header svg{
+    width: 10rem;
+}
+
+header .logo{
+    margin: auto;
+}
+
+/* menu burger */
+
+.MuiPaper-root{
+    background-color: black!important;
+    width: 576px;
+    height: 100vh;
+}
+
+.MuiPaper-root div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.MuiPaper-root div button{
+    color: white;
+    padding-left: 2rem;
+}
+
+.MuiPaper-root div img{
+    width: 20%;
+    margin-left: 20%;
+}
+
+.MuiPaper-root ul{
+    text-align: center;
+    padding-top: 5rem;
+    margin-left: 20%;
+}
+
+.MuiPaper-root ul a, .MuiPaper-root ul div, .MuiPaper-root ul span{
+    width: max-content;
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+/* ----------- Play ------------ */
+.Play input:first-child{
+    margin-top: 4rem;
+}
+
+.Play .addPlayer{
+    margin-top: 1rem !important;
+    background-color: black;
+    border: 2px solid #80F7FF;
+    color: #80F7FF;
+}
+
+.Play button:last-child{
+    margin-top: 15rem;
+}
+
+
+
+/* ----------- Round ------------ */
+.StartRound article{
+    width: max-content;
+    margin: auto;
+    margin-top: 1.5rem;
+}
+
+.StartRound label{
+    width: max-content;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    color: black !important;
+    font-size: 1.4rem;
+    margin-top: 0;
+
+    border: none;
+    border-top-right-radius: .5rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: 2rem;
+
+    cursor: pointer;
+}
+
+.StartRound article label{
+    margin-right: 1rem;
+}
+
+.StartRound article label:last-child{
+    margin-right: -1rem;
+}
+
+.blue{background-color: #80F7FF;}
+.selected{background-color: black; color : #80F7FF; border: 2px solid #80F7FF;}
+
+.green{background-color: #85FF82;}
+
+.pink{background-color: #FC6AFF;}
+
+.orange{background-color: #FEB078;}
+
+.yellow{background-color: #FFF066;}
+
+.grey{background-color: #DBDBDB;}
+
+.rainbowF{background: conic-gradient(#FE8181, #7ED8FF, #B9FF82, #FFF066, #FF7171);}
+.rainbow{background: conic-gradient(#B9FF82, #FFF066, #FEB078, #FC6AFF, #7ED8FF, #B9FF82);}
+
+.blue.skip{
+    margin-top: 2rem;
+    padding: 1.5rem 5rem;
+}
+
+
+.StartRound .scroll{
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+.StartRound .fix1{
+    position: fixed;
+    width: max-content;
+    width: 75%;
+    left: 11%;
+    bottom: 3%;
+}
+
+
+
+/* ----------- endRound ------------ */
+
+.endRound button{
+    margin-top: 30rem;
+}
+
+
+/* ----------- score ------------ */
+.score div{
+    width: 75%;
+    justify-content: space-between;
+    margin: auto;
+    border: 2px solid white;
+    border-radius: .5rem;
+    padding: 1.5rem .6rem;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    font-weight: bolder;
+}
+
+.score section div:first-child{
+    color: black;
+    background: linear-gradient(
+        135deg,
+        #B9FF82,
+        #FFF066,
+        #FEB078,
+        #FC6AFF,
+        #7ED8FF,
+        #b9ff82
+    );
+    margin: 5rem auto 3rem;
+}
+
+.score div span:first-child{
+   font-weight: lighter;
+}
